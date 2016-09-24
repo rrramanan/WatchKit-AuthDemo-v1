@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4EC42C091D964520005039E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC42C081D964520005039E9 /* main.m */; };
+		4EC42C0C1D964520005039E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC42C0B1D964520005039E9 /* AppDelegate.m */; };
+		4EC42C0F1D964520005039E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC42C0E1D964520005039E9 /* ViewController.m */; };
+		4EC42C121D964520005039E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC42C101D964520005039E9 /* Main.storyboard */; };
+		4EC42C141D964520005039E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC42C131D964520005039E9 /* Assets.xcassets */; };
+		4EC42C171D964520005039E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC42C151D964520005039E9 /* LaunchScreen.storyboard */; };
+		4EC42C1C1D964520005039E9 /* logKCA WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4EC42C1B1D964520005039E9 /* logKCA WatchKit App.app */; };
+		4EC42C221D964520005039E9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EC42C201D964520005039E9 /* Interface.storyboard */; };
+		4EC42C241D964520005039E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC42C231D964520005039E9 /* Assets.xcassets */; };
+		4EC42C2B1D964520005039E9 /* logKCA WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4EC42C2A1D964520005039E9 /* logKCA WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4EC42C331D964520005039E9 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC42C321D964520005039E9 /* InterfaceController.m */; };
+		4EC42C361D964520005039E9 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC42C351D964520005039E9 /* ExtensionDelegate.m */; };
+		4EC42C391D964520005039E9 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC42C381D964520005039E9 /* NotificationController.m */; };
+		4EC42C3C1D964520005039E9 /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC42C3B1D964520005039E9 /* ComplicationController.m */; };
+		4EC42C3E1D964520005039E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC42C3D1D964520005039E9 /* Assets.xcassets */; };
+		4EC42C501D964557005039E9 /* rowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC42C4F1D964557005039E9 /* rowController.m */; };
+		4EC42C531D964638005039E9 /* BreifController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC42C521D964638005039E9 /* BreifController.m */; };
+		4EC42C561D9647AC005039E9 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC42C551D9647AC005039E9 /* KeychainItemWrapper.m */; };
+		4EC42C571D9647AC005039E9 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC42C551D9647AC005039E9 /* KeychainItemWrapper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4EC42C1D1D964520005039E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EC42BFC1D964520005039E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EC42C1A1D964520005039E9;
+			remoteInfo = "logKCA WatchKit App";
+		};
+		4EC42C2C1D964520005039E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EC42BFC1D964520005039E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EC42C291D964520005039E9;
+			remoteInfo = "logKCA WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4EC42C451D964520005039E9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4EC42C2B1D964520005039E9 /* logKCA WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC42C491D964520005039E9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4EC42C1C1D964520005039E9 /* logKCA WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4EC42C041D964520005039E9 /* logKCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = logKCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EC42C081D964520005039E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4EC42C0A1D964520005039E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4EC42C0B1D964520005039E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4EC42C0D1D964520005039E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4EC42C0E1D964520005039E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4EC42C111D964520005039E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4EC42C131D964520005039E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4EC42C161D964520005039E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4EC42C181D964520005039E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EC42C1B1D964520005039E9 /* logKCA WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "logKCA WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EC42C211D964520005039E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		4EC42C231D964520005039E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4EC42C251D964520005039E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EC42C2A1D964520005039E9 /* logKCA WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "logKCA WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EC42C301D964520005039E9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		4EC42C311D964520005039E9 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		4EC42C321D964520005039E9 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		4EC42C341D964520005039E9 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		4EC42C351D964520005039E9 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		4EC42C371D964520005039E9 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		4EC42C381D964520005039E9 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		4EC42C3A1D964520005039E9 /* ComplicationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplicationController.h; sourceTree = "<group>"; };
+		4EC42C3B1D964520005039E9 /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
+		4EC42C3D1D964520005039E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4EC42C3F1D964520005039E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EC42C4D1D964534005039E9 /* logKCA WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "logKCA WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		4EC42C4E1D964557005039E9 /* rowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rowController.h; sourceTree = "<group>"; };
+		4EC42C4F1D964557005039E9 /* rowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rowController.m; sourceTree = "<group>"; };
+		4EC42C511D964638005039E9 /* BreifController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BreifController.h; sourceTree = "<group>"; };
+		4EC42C521D964638005039E9 /* BreifController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BreifController.m; sourceTree = "<group>"; };
+		4EC42C541D9647AC005039E9 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		4EC42C551D9647AC005039E9 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EC42C011D964520005039E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC42C271D964520005039E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EC42BFB1D96451F005039E9 = {
+			isa = PBXGroup;
+			children = (
+				4EC42C061D964520005039E9 /* logKCA */,
+				4EC42C1F1D964520005039E9 /* logKCA WatchKit App */,
+				4EC42C2E1D964520005039E9 /* logKCA WatchKit Extension */,
+				4EC42C051D964520005039E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4EC42C051D964520005039E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EC42C041D964520005039E9 /* logKCA.app */,
+				4EC42C1B1D964520005039E9 /* logKCA WatchKit App.app */,
+				4EC42C2A1D964520005039E9 /* logKCA WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EC42C061D964520005039E9 /* logKCA */ = {
+			isa = PBXGroup;
+			children = (
+				4EC42C0A1D964520005039E9 /* AppDelegate.h */,
+				4EC42C0B1D964520005039E9 /* AppDelegate.m */,
+				4EC42C0D1D964520005039E9 /* ViewController.h */,
+				4EC42C0E1D964520005039E9 /* ViewController.m */,
+				4EC42C101D964520005039E9 /* Main.storyboard */,
+				4EC42C131D964520005039E9 /* Assets.xcassets */,
+				4EC42C151D964520005039E9 /* LaunchScreen.storyboard */,
+				4EC42C181D964520005039E9 /* Info.plist */,
+				4EC42C071D964520005039E9 /* Supporting Files */,
+			);
+			path = logKCA;
+			sourceTree = "<group>";
+		};
+		4EC42C071D964520005039E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4EC42C081D964520005039E9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4EC42C1F1D964520005039E9 /* logKCA WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				4EC42C201D964520005039E9 /* Interface.storyboard */,
+				4EC42C231D964520005039E9 /* Assets.xcassets */,
+				4EC42C251D964520005039E9 /* Info.plist */,
+			);
+			path = "logKCA WatchKit App";
+			sourceTree = "<group>";
+		};
+		4EC42C2E1D964520005039E9 /* logKCA WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4EC42C4D1D964534005039E9 /* logKCA WatchKit Extension.entitlements */,
+				4EC42C541D9647AC005039E9 /* KeychainItemWrapper.h */,
+				4EC42C551D9647AC005039E9 /* KeychainItemWrapper.m */,
+				4EC42C311D964520005039E9 /* InterfaceController.h */,
+				4EC42C321D964520005039E9 /* InterfaceController.m */,
+				4EC42C4E1D964557005039E9 /* rowController.h */,
+				4EC42C4F1D964557005039E9 /* rowController.m */,
+				4EC42C511D964638005039E9 /* BreifController.h */,
+				4EC42C521D964638005039E9 /* BreifController.m */,
+				4EC42C341D964520005039E9 /* ExtensionDelegate.h */,
+				4EC42C351D964520005039E9 /* ExtensionDelegate.m */,
+				4EC42C371D964520005039E9 /* NotificationController.h */,
+				4EC42C381D964520005039E9 /* NotificationController.m */,
+				4EC42C3A1D964520005039E9 /* ComplicationController.h */,
+				4EC42C3B1D964520005039E9 /* ComplicationController.m */,
+				4EC42C3D1D964520005039E9 /* Assets.xcassets */,
+				4EC42C3F1D964520005039E9 /* Info.plist */,
+				4EC42C2F1D964520005039E9 /* Supporting Files */,
+			);
+			path = "logKCA WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		4EC42C2F1D964520005039E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4EC42C301D964520005039E9 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4EC42C031D964520005039E9 /* logKCA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EC42C4A1D964520005039E9 /* Build configuration list for PBXNativeTarget "logKCA" */;
+			buildPhases = (
+				4EC42C001D964520005039E9 /* Sources */,
+				4EC42C011D964520005039E9 /* Frameworks */,
+				4EC42C021D964520005039E9 /* Resources */,
+				4EC42C491D964520005039E9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EC42C1E1D964520005039E9 /* PBXTargetDependency */,
+			);
+			name = logKCA;
+			productName = logKCA;
+			productReference = 4EC42C041D964520005039E9 /* logKCA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4EC42C1A1D964520005039E9 /* logKCA WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EC42C461D964520005039E9 /* Build configuration list for PBXNativeTarget "logKCA WatchKit App" */;
+			buildPhases = (
+				4EC42C191D964520005039E9 /* Resources */,
+				4EC42C451D964520005039E9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EC42C2D1D964520005039E9 /* PBXTargetDependency */,
+			);
+			name = "logKCA WatchKit App";
+			productName = "logKCA WatchKit App";
+			productReference = 4EC42C1B1D964520005039E9 /* logKCA WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		4EC42C291D964520005039E9 /* logKCA WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EC42C421D964520005039E9 /* Build configuration list for PBXNativeTarget "logKCA WatchKit Extension" */;
+			buildPhases = (
+				4EC42C261D964520005039E9 /* Sources */,
+				4EC42C271D964520005039E9 /* Frameworks */,
+				4EC42C281D964520005039E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "logKCA WatchKit Extension";
+			productName = "logKCA WatchKit Extension";
+			productReference = 4EC42C2A1D964520005039E9 /* logKCA WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EC42BFC1D964520005039E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Vinod Ramanathan";
+				TargetAttributes = {
+					4EC42C031D964520005039E9 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Y9K2N3MSD5;
+						ProvisioningStyle = Automatic;
+					};
+					4EC42C1A1D964520005039E9 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Y9K2N3MSD5;
+						ProvisioningStyle = Automatic;
+					};
+					4EC42C291D964520005039E9 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Y9K2N3MSD5;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 4EC42BFF1D964520005039E9 /* Build configuration list for PBXProject "logKCA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4EC42BFB1D96451F005039E9;
+			productRefGroup = 4EC42C051D964520005039E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EC42C031D964520005039E9 /* logKCA */,
+				4EC42C1A1D964520005039E9 /* logKCA WatchKit App */,
+				4EC42C291D964520005039E9 /* logKCA WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4EC42C021D964520005039E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC42C171D964520005039E9 /* LaunchScreen.storyboard in Resources */,
+				4EC42C141D964520005039E9 /* Assets.xcassets in Resources */,
+				4EC42C121D964520005039E9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC42C191D964520005039E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC42C241D964520005039E9 /* Assets.xcassets in Resources */,
+				4EC42C221D964520005039E9 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC42C281D964520005039E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC42C3E1D964520005039E9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EC42C001D964520005039E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC42C561D9647AC005039E9 /* KeychainItemWrapper.m in Sources */,
+				4EC42C0F1D964520005039E9 /* ViewController.m in Sources */,
+				4EC42C0C1D964520005039E9 /* AppDelegate.m in Sources */,
+				4EC42C091D964520005039E9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EC42C261D964520005039E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EC42C531D964638005039E9 /* BreifController.m in Sources */,
+				4EC42C501D964557005039E9 /* rowController.m in Sources */,
+				4EC42C361D964520005039E9 /* ExtensionDelegate.m in Sources */,
+				4EC42C3C1D964520005039E9 /* ComplicationController.m in Sources */,
+				4EC42C331D964520005039E9 /* InterfaceController.m in Sources */,
+				4EC42C391D964520005039E9 /* NotificationController.m in Sources */,
+				4EC42C571D9647AC005039E9 /* KeychainItemWrapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EC42C1E1D964520005039E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EC42C1A1D964520005039E9 /* logKCA WatchKit App */;
+			targetProxy = 4EC42C1D1D964520005039E9 /* PBXContainerItemProxy */;
+		};
+		4EC42C2D1D964520005039E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EC42C291D964520005039E9 /* logKCA WatchKit Extension */;
+			targetProxy = 4EC42C2C1D964520005039E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4EC42C101D964520005039E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EC42C111D964520005039E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4EC42C151D964520005039E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EC42C161D964520005039E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4EC42C201D964520005039E9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EC42C211D964520005039E9 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4EC42C401D964520005039E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4EC42C411D964520005039E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4EC42C431D964520005039E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "logKCA WatchKit Extension/logKCA WatchKit Extension.entitlements";
+				DEVELOPMENT_TEAM = Y9K2N3MSD5;
+				INFOPLIST_FILE = "logKCA WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acinfotech.logKCA.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		4EC42C441D964520005039E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "logKCA WatchKit Extension/logKCA WatchKit Extension.entitlements";
+				DEVELOPMENT_TEAM = Y9K2N3MSD5;
+				INFOPLIST_FILE = "logKCA WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acinfotech.logKCA.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		4EC42C471D964520005039E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y9K2N3MSD5;
+				IBSC_MODULE = logKCA_WatchKit_Extension;
+				INFOPLIST_FILE = "logKCA WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acinfotech.logKCA.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		4EC42C481D964520005039E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y9K2N3MSD5;
+				IBSC_MODULE = logKCA_WatchKit_Extension;
+				INFOPLIST_FILE = "logKCA WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acinfotech.logKCA.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		4EC42C4B1D964520005039E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y9K2N3MSD5;
+				INFOPLIST_FILE = logKCA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acinfotech.logKCA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4EC42C4C1D964520005039E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y9K2N3MSD5;
+				INFOPLIST_FILE = logKCA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acinfotech.logKCA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4EC42BFF1D964520005039E9 /* Build configuration list for PBXProject "logKCA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC42C401D964520005039E9 /* Debug */,
+				4EC42C411D964520005039E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EC42C421D964520005039E9 /* Build configuration list for PBXNativeTarget "logKCA WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC42C431D964520005039E9 /* Debug */,
+				4EC42C441D964520005039E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4EC42C461D964520005039E9 /* Build configuration list for PBXNativeTarget "logKCA WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC42C471D964520005039E9 /* Debug */,
+				4EC42C481D964520005039E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4EC42C4A1D964520005039E9 /* Build configuration list for PBXNativeTarget "logKCA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC42C4B1D964520005039E9 /* Debug */,
+				4EC42C4C1D964520005039E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4EC42BFC1D964520005039E9 /* Project object */;
+}

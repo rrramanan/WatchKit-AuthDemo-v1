@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MDp-cA-u5m">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
+    </dependencies>
+    <scenes>
+        <!--Breif Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="BreifController">
+                    <items>
+                        <label width="156" height="81" alignment="left" text="Label" textAlignment="center" id="IYh-jo-qTT"/>
+                    </items>
+                    <connections>
+                        <outlet property="breifLAbel" destination="IYh-jo-qTT" id="RG6-w5-ENZ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="152" y="103"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="6jl-2W-IKm">
+            <objects>
+                <controller id="MDp-cA-u5m" customClass="InterfaceController">
+                    <items>
+                        <table alignment="left" pagingScroll="YES" id="ie8-RO-eV9">
+                            <items>
+                                <tableRow identifier="rowID" id="toC-DM-xht" customClass="rowController">
+                                    <group key="rootItem" width="1" alignment="left" id="e36-Qy-Z8E">
+                                        <items>
+                                            <label width="148" height="38" alignment="left" text="Label" id="adq-NK-uhC">
+                                                <variation key="device=watch38mm" height="36"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="tabLabel" destination="adq-NK-uhC" id="3gY-rl-lhY"/>
+                                        <segue destination="AgC-eL-Hgc" kind="push" identifier="viewTwo" id="4fj-IS-8eO"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <group width="1" height="170" alignment="left" layout="vertical" spacing="3" id="ch1-Cd-SMk">
+                            <items>
+                                <group width="1" height="65" alignment="left" layout="vertical" spacing="4" id="pyc-Gd-PU2">
+                                    <items>
+                                        <label width="150" height="29" alignment="left" text="Mail ID" id="Ng3-bp-3lF">
+                                            <variation key="device=watch38mm" height="26"/>
+                                        </label>
+                                        <label width="150" height="29" alignment="left" text="Password" id="6Ax-j6-NTr">
+                                            <variation key="device=watch38mm" height="26"/>
+                                        </label>
+                                    </items>
+                                    <variation key="device=watch38mm" height="53"/>
+                                    <variation key="device=watch42mm" spacing="7"/>
+                                </group>
+                                <group width="1" height="31" alignment="left" verticalAlignment="center" id="UiG-nA-9aO">
+                                    <items>
+                                        <button width="76" height="30" alignment="left" title="Mail" id="wmC-cV-ngK">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <variation key="device=watch38mm" width="66"/>
+                                            <connections>
+                                                <action selector="mail" destination="MDp-cA-u5m" id="0n1-tK-VZs"/>
+                                            </connections>
+                                        </button>
+                                        <button width="76" height="30" alignment="left" title="Pass" id="EoJ-5V-ZLh">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <variation key="device=watch38mm" width="66"/>
+                                            <connections>
+                                                <action selector="password" destination="MDp-cA-u5m" id="fKi-Ob-80t"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <variation key="device=watch38mm" height="30"/>
+                                </group>
+                                <group width="1" height="29" alignment="left" verticalAlignment="center" id="Bsa-xZ-vea">
+                                    <items>
+                                        <switch height="30" alignment="left" title="Save Items" id="3AW-Zf-kEx">
+                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            <variation key="device=watch38mm" height="30"/>
+                                            <connections>
+                                                <action selector="switchAction:" destination="MDp-cA-u5m" id="PTX-sW-INU"/>
+                                            </connections>
+                                        </switch>
+                                    </items>
+                                    <variation key="device=watch42mm" height="29"/>
+                                </group>
+                                <button width="1" height="35" alignment="left" verticalAlignment="center" title="Log In" id="sYa-Kt-syb">
+                                    <color key="titleColor" red="0.27064055199999998" green="0.32037949560000001" blue="0.99298173190000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <variation key="device=watch38mm" height="30"/>
+                                    <connections>
+                                        <action selector="LogIn" destination="MDp-cA-u5m" id="tOM-48-rLk"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <variation key="device=watch38mm" height="150" spacing="2.1000000000000001"/>
+                        </group>
+                    </items>
+                    <menu key="menu" id="uJE-IF-npT">
+                        <items>
+                            <menuItem title="Logout" icon="maybe" id="T9m-tX-tGl">
+                                <connections>
+                                    <action selector="logout" destination="MDp-cA-u5m" id="dIM-Xw-oQc"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="Table" destination="ie8-RO-eV9" id="nwn-bd-Rxj"/>
+                        <outlet property="label" destination="Ng3-bp-3lF" id="zH1-m5-neK"/>
+                        <outlet property="label1" destination="6Ax-j6-NTr" id="MVf-Ka-ZMh"/>
+                        <outlet property="log_group" destination="ch1-Cd-SMk" id="oL8-9d-icq"/>
+                        <outlet property="switchHit" destination="3AW-Zf-kEx" id="c3u-ee-oce"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-133" y="103.5"/>
+        </scene>
+    </scenes>
+</document>
