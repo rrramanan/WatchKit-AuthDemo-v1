@@ -8,7 +8,7 @@ watchOS 3 - User authentication watch app (Standalone) with Keychain Access
 <li>Tap save items switch ON to save login credentials</li>
 <li>Select login button to authenticate</li>
 <li>For quick testing I've added correct/incorrect credentials in textinputcontroller suggestions</li>
-<li>Correct credential test@mail.com/123-Ive@air.pod/456</li>
+<li>Correct credentials test@mail.com/123-Ive@air.pod/456</li>
 </ul>
 
 ![alt Tab](https://github.com/rrramanan/WatchKit-AuthDemo-v1/blob/master/homeScreen.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
