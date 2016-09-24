@@ -7,7 +7,7 @@ watchOS 3 - User authentication watch app (Standalone) with Keychain Access
 <li>Select Pass button to bring textinputcontroller & choose scribble to enter password</li>
 <li>Tap save items switch to save login credentials</li>
 <li>Select login button to authenticate</li>
-<li>For quick testing I've added correct/incorrect credentials in textinputcontroller suggestions for mail/password</li>
+<li>For quick testing I've added correct/incorrect credentials in textinputcontroller suggestions</li>
 <li>Correct credential test@mail.com/123-Ive@air.pod/456</li>
 </ul>
 
